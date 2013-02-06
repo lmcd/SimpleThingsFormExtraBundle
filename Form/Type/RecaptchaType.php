@@ -63,7 +63,7 @@ class RecaptchaType extends AbstractType
         }
 
         $builder
-            ->add('recaptcha_challenge_field', 'text')
+            ->add('recaptcha_challenge_field', 'hidden')
             ->add('recaptcha_response_field', 'hidden', array(
                 'data' => 'manual_challenge',
             ));
